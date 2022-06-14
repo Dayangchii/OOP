@@ -1,12 +1,12 @@
-class Menu:
-    type = ''
-    food = []
+class Menu: # template/blueprint for building objects
+    type = '' 
+    food = [] # attributes
     
-    def  __init__(self, type= '', food = []):
+    def  __init__(self, type= '', food = []): # constructor
         self.type = type
         self.food = food
 
-    def FoodMenu(self):
+    def FoodMenu(self): # methods
         return[food.name for food in self.food]
 
 class Food:
